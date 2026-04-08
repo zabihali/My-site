@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Ruslan+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Passion One', sans-serif;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #530018;
+    color: #fff;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.logo-container .logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Passion One", sans-serif;
+}
+
+.out-logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 3px;
+    border-radius: 5px;
+    border: 0.5px solid white;
+}
+
+nav {
+    display: flex;
+}
+
+.nav-button {
+    background-color: white;
+    color: #530018;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+}
+
+.nav-button:hover {
+    background-color: #530018;
+    color: white;
+    border: white solid 1px;
+}
+
+/* Main Section (AF) styles */
+.AF {
+    background-color: #fff;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: #530018;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: black solid 2px;
+    color: white;
+}
+
+.profiles {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    align-self: center;
+    border: white solid 2px;
+}
+
+h1, h2, p {
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+.Whychoose {
+    padding: 10px;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #530018;
+}
+
+li {
+    padding: 10px;
+    list-style: none;
+}
+
+a {
+    color: #530018;
+}
+
+
+
+.numbercc {
+    padding: 1px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #530018;
+}
+
+.numberc {
+    display: flex; /* Arrange items side by side */
+    justify-content: space-around; /* Add space between the items */
+    align-items: center; /* Center items vertically */
+}
+
+li {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Set the items inside <li> as a flex container */
+    flex-direction: column; /* Arrange the image and text vertically inside <li> */
+    align-items: center; /* Center them horizontally */
+    margin: 0 5px; /* Add spacing between <li> elements */
+}
+
+.location {
+    width: 20px;
+    height: 20px;
+    
+}
+
+
+
+
+/* Mobile and Tablet Responsive Styles */
+@media (max-width: 1280px) {
+    header {
+        padding: 15px;
+    }
+
+    .box {
+        padding: 20px;
+        width: 80%; /* More flexible box width */
+    }
+
+    .profiles {
+        width: 180px;
+        height: 180px;
+    }
+
+    .nav-button {
+        padding: 8px 16px;
+    }
+}
+
+/* Tablet (up to 1024px) and Small Mobile (up to 768px) */
+@media (max-width: 768px) {
+    .AF {
+        padding: 30px;
+    }
+
+    .box {
+        padding: 15px;
+        width: 100%; /* Box takes full width */
+        max-width: none; /* Disable max width */
+    }
+
+    .profiles {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-button {
+        width: 80%;
+        margin: 5px 0;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .logo-container .logo {
+        font-size: 28px;
+    }
+    .numberc{
+        display: inline;
+    }
+}
+
+/* Very Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+    .AF {
+        padding: 20px;
+    }
+
+    .box {
+        padding: 10px;
+    }
+
+    .profiles {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .nav-button {
+        padding: 10px;
+        width: 100%; /* Full width buttons */
+    }
+
+    .logo-container .logo {
+        font-size: 24px;
+    }
+}
+
+/* For Galaxy S8 & smaller devices with width ~360px */
+@media (max-width: 360px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo-container .logo {
+        font-size: 22px; /* Decrease logo size */
+    }
+
+    .box {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .profiles {
+        width: 110px;
+        height: 110px;
+    }
+
+    .nav-button {
+        padding: 8px 16px;
+    }
+
+    .nav-button:hover {
+        font-size: 0.9rem; /* Reduce font size for smaller buttons */
+    }
+}
