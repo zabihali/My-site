@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #530018;
+    color: #fff;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+
+
+.logo-container {
+    display: flex;
+    justify-content: left;  
+    width: 100%;  
+}
+
+.logo-container .logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;  
+    font-family: "Passion One", sans-serif;
+}
+
+.out-logo{
+	width: 30px;
+	height: 30px;
+	margin-left: 15px;
+	margin-top: 3px;
+	border-radius: 5px;
+	border: 0.5px solid white;
+}
+nav {
+    display: flex;
+}
+
+.nav-button {
+    background-color: white;
+    color: #530018;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+}
+
+.nav-button:hover {
+    background-color: #530018;
+    color: white;
+    border: white solid 1px;
+}
+
+/* Container for .box3 elements */
+.box {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+/* Flex container for items */
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 items per row by default */
+    gap: 15px;
+    width: 100%;
+
+}
+
+.imga {
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    border: #530018 solid 2px;
+}
+
+
+.khan {
+    background-color: #fff;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding-bottom: 0px;
+    
+}
+
+h3{
+    background-color: #fff;
+    height: 40px;
+    border: #530018 solid 2px;
+    border-radius: 10px;
+    color: #530018;
+    padding-top: 7px;
+    
+    
+    
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-button {
+        width: 45%;
+        margin: 5px;
+    }
+
+   
+    .logo-container {
+    display: flex;
+    justify-content: center;  /* Centers the logo container */
+    width: 100%;  /* Ensures the container takes up the full width */
+    padding-bottom: 20px;
+}
+
+
+    
+    /* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+}
+
+}
+
+@media (max-width: 480px) {
+    
+}
